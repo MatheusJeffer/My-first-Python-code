@@ -6,10 +6,10 @@ contatos = {}
 
 while True:
     print('[1]Adicionar contatos.\n[2]Pesquisar contatos.\n[3]Apagar contatos.\n[4]Salvar contatos em arquivo txt.\n[5]Sair.')
-    select = str(input('Selecione uma opção: '))
+    select = int(input('Selecione uma opção: '))
  
 
-    if select_int == 1:
+    if select == 1:
         add_contato = str(input('O nome do contato: '))
         add_numero = str(input('Digite o número do contato: '))
 
@@ -20,7 +20,7 @@ while True:
         contatos.clear() #Após o processo, todos os dados do dicionário vai ser apagados.
         print('Feito!')
 
-    if select_int == 2:
+    if select == 2:
         nome_contato = str(input('Digite o nome do contato: '))
         
         for cont in list_de_contato: #Vai pegar todos os dados da lista.
@@ -28,7 +28,7 @@ while True:
                if nome_contato in cont["Nome:"]:
                      print(keys, item)
 
-    if select_int == 3:
+    if select == 3:
         print('=~'*20)
         print('         Lista de contatos')
         print('=~'*20)
@@ -49,10 +49,10 @@ while True:
         except:
             print('\033[0;31mERROR: Esse contato não existe.\033[0m')
 
-    if select_int == 4:
+    if select == 4:
         Arquivos.contatos_archive(list_de_contato)
 
-    if select_int == 5:
+    if select == 5:
         break
                     
 
