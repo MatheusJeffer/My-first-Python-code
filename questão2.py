@@ -7,9 +7,11 @@ contatos = {}
 while True:
     print('[1]Adicionar contatos.\n[2]Pesquisar contatos.\n[3]Apagar contatos.\n[4]Salvar contatos em arquivo txt.\n[5]Sair.')
     select = int(input('Selecione uma opção: '))
- 
+    while select > 5 or select < 1:
+         print('Error.')
+         select = int(input('Selecione uma opção: '))
 
-    if select_init == 1:
+    if select == 1:
         add_contato = str(input('O nome do contato: '))
         add_numero = str(input('Digite o número do contato: '))
 
