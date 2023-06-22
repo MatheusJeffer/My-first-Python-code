@@ -44,6 +44,7 @@ while True:
         if contador == 0:
             print('\033[0;31mO contato não existe\033[0m')
         print('=~'*18)
+        
     if select == 3:
         line('Deletar contatos')
         for pos, pessoas in enumerate(list_de_contato):
