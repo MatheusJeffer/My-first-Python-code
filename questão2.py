@@ -9,7 +9,7 @@ while True:
     select = int(input('Selecione uma opção: '))
  
 
-    if select == 1:
+    if select_init == 1:
         add_contato = str(input('O nome do contato: '))
         add_numero = str(input('Digite o número do contato: '))
 
