@@ -42,7 +42,7 @@ while True:
         contador = 0
         for cont in list_de_contato: #Vai pegar todos os dados da lista.
             for  keys, item in cont.items():
-               if nome_contato in cont["Nome:"]:
+               if nome_contato in cont["Nome:"]: #Vai analizar se o nome digitado está no dicionário.
                      print(keys, item)
                      contador =+ 1
 
