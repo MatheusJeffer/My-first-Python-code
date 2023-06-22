@@ -32,7 +32,7 @@ while True:
         contatos["Telefone:"] = add_numero
         
         list_de_contato.append(contatos.copy())
-        contatos.clear() #Após o processo, todos os dados do dicionário vai ser apagados.
+        contatos.clear() #Após o processo, todos os dados do dicionário vão ser apagados.
         print('Feito!')
         print('=-'*18)
         
