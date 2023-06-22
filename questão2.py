@@ -1,13 +1,18 @@
 from Contatos.dat import Arquivos
 
-list_de_contato = []
 
-contatos = {}
 def line(text):
     tamanho = len(text)
     print('=~'*tamanho)
     print(f'        {text}')
     print('=~'*tamanho)
+
+
+
+list_de_contato = []
+contatos = {}
+
+
 while True:
     print('[1]Adicionar contatos.\n[2]Pesquisar contatos.\n[3]Apagar contatos.\n[4]Salvar contatos em arquivo txt.\n[5]Sair.')
     select = str(input('Selecione uma opção: '))
@@ -44,7 +49,7 @@ while True:
         if contador == 0:
             print('\033[0;31mO contato não existe\033[0m')
         print('=~'*18)
-        
+
     if select == 3:
         line('Deletar contatos')
         for pos, pessoas in enumerate(list_de_contato):
